@@ -1,6 +1,11 @@
 .SignupImage {
     width: 320px;
 
+    & .SignupImage__tip {
+        margin-top: 5px;
+        text-align: center;
+    }
+
     & .ImageUploaderBlock {
         margin-top: 45px;
     }

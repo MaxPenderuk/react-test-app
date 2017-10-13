@@ -27,11 +27,7 @@ app.use('/static', express.static('public/static'));
 
 app.use((req, res) => {
     const store = configureStore();
-    // const clientIp = req.headers['x-real-ip'] || req.headers['x-forwarded-for'];
-
-    // IN CASE OF LOCALHOST
-    const clientIp = '194.183.171.4';
-
+    const clientIp = req.headers['x-real-ip'] || req.headers['x-forwarded-for'];
     const geolocation = geoip.lookup(clientIp);
 
     match({ routes, location: req.url }, async (error, redirectLocation, renderProps) => {
@@ -40,7 +36,9 @@ app.use((req, res) => {
                 return;
             }
 
-            store.dispatch(setUserCountryCode(geolocation));
+            if (geolocation) {
+                store.dispatch(setUserCountryCode(geolocation));
+            }
 
             await fetchComponentsData({
                 dispatch   : store.dispatch,

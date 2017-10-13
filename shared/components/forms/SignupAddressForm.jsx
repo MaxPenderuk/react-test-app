@@ -50,8 +50,9 @@ export default class SignupAddressForm extends Component {
         if (userInfo.country) {
             state.country = userInfo.country;
         }
-
-        state.country = userInfo.country || find(userCountriesList, val => val.code === userInfo.countryCode);
+        if (userInfo.countryCode) {
+            state.country = find(userCountriesList, val => val.code === userInfo.countryCode);
+        }
 
         this.setState(state);
     }

@@ -7,6 +7,11 @@
     background-color: #EBEBEB;
 
     & .ImageUploaderBlock__label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
         cursor: pointer;
         & span {
             color: #B5B5B5;

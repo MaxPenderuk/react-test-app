@@ -57,6 +57,7 @@ export default class SignupImage extends Component {
                                 onDelete={this.handleImageDelete.bind(null, 'frontSideImg')}
                             />
                     }
+                    <div className='SignupImage__tip'>{'Wähle zwei Bilder'}</div>
                     {
                         !userInfo.backSideImg
                         ?
@@ -70,6 +71,7 @@ export default class SignupImage extends Component {
                                 onDelete={this.handleImageDelete.bind(null, 'backSideImg')}
                             />
                     }
+                    <div className='SignupImage__tip'>{'Wähle zwei Bilder'}</div>
                     <Button text='Weiter' onClick={this.handleSubmitClick} />
                 </div>
             </Container>
