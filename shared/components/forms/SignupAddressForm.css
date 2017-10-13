@@ -1,0 +1,16 @@
+.SignupAddressForm {
+    width: 320px;
+    height: 570px;
+
+    & .Button {
+        margin-top: 80px;
+    }
+
+    & .Select-control {
+        border-radius: 0;
+
+        & .Select-clear {
+            font-size: 21px;
+        }
+    }
+}

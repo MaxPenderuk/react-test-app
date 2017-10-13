@@ -1,0 +1,13 @@
+.Heading {
+    color: #959595;
+
+    &.Heading--center {
+        text-align: center;
+    }
+    &.Heading--left {
+        text-align: left;
+    }
+    &.Heading--right {
+        text-align: right;
+    }
+}

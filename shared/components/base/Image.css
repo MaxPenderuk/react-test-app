@@ -1,0 +1,16 @@
+.Image {
+    & .Image__delete {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        margin-top: -20px;
+        top: 16px;
+        left: 309px;
+        border-radius: 10px;
+        background-image: url(../../assets/images/close_white_mini.svg);
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-color: #3498DB;
+        cursor: pointer;
+    }
+}

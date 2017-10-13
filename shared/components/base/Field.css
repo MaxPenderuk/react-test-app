@@ -1,0 +1,36 @@
+.Field {
+    width: 100%;
+    margin: 10px 0;
+
+    &.Field--error {
+        & .Field__error-text {
+            display: block;
+        }
+        & input {
+            border: 1px solid #EA5940;
+        }
+    }
+
+    & input {
+        padding: 7px;
+        height: 40px;
+        font: 17px 'OpenSans-Semibold',sans-serif;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #C8C8C8;
+    }
+
+    & .Field__error {
+        display: none;
+        font: 12px 'OpenSans-Regular',sans-serif;
+        color: #f00;
+        margin-top: -30px;
+    }
+
+    & .Field__error-text {
+        text-align: center;
+        display: none;
+        font: 12px 'OpenSans-Regular',sans-serif;
+        color: #f00;
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "extends": "webbylab",
+    "rules": {
+        "more/no-window": 0, // Temporary disable
+        "no-sync": 0,
+    }
+}

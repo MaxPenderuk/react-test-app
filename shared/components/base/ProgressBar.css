@@ -1,0 +1,18 @@
+.ProgressBar {
+    width: 100%;
+    background-color: #F1F1F1;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 5px;
+
+    & .ProgressBar__line {
+        color: #FFF;
+        background-color: #428BCA;
+        height: 24px;
+        border-radius: 5px;
+
+        &.ProgressBar__line--success {
+            background-color: #5DA423;
+        }
+    }
+}

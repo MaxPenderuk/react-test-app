@@ -1,0 +1,8 @@
+.SignupAdditionalForm {
+    width: 320px;
+    text-align: center;
+
+    & .Button {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,6 @@
+node_modules/
+public/static/build/
+public/static/config.js
+npm-debug.log
+etc/client-config.json
+*.DS_Store

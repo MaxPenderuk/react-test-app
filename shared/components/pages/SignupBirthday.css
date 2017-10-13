@@ -1,0 +1,9 @@
+.SignupBirthday {
+    width: 320px;
+    height: 570px;
+    text-align: center;
+
+    & .Button {
+        margin-top: 20px;
+    }
+}

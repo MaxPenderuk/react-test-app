@@ -1,0 +1,29 @@
+.App {
+    height: 100%;
+    width: 100%;
+
+    & > transition {
+        height: 100%;
+        width: 100%; 
+
+
+    }
+}
+
+.page-enter {
+    left: -1000px;
+}
+
+.page-enter.page-enter-active {
+    left: 0px;
+    transition: left 200ms ease-in;
+}
+
+.page-leave {
+    left: 0px;
+}
+
+.page-leave.page-leave-active {
+    left: -1000px;
+    transition: left 200ms ease-in;
+}

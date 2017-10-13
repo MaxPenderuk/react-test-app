@@ -1,0 +1,8 @@
+.SignupNameForm {
+    width: 320px;
+    height: 570px;
+
+    & .Button {
+        margin-top: 80px;
+    }
+}

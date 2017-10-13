@@ -1,0 +1,35 @@
+.Button {
+    padding: 12px;
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    border: none;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #3498DB;
+
+    @media (max-width: 500px) {
+        font-size: 12px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    &.Button--bg {
+        font: 12px 'OpenSans-Bold', sans-serif;
+        letter-spacing: 3px;
+        width: 290px;
+    }
+    &.Button--default {
+        color: #000;
+        background-color: #E6E6E6;
+    }
+    &.Button--custom {
+        background-color: #1EBBCF;
+    }
+
+    &[disabled] {
+        background-color: #90949c !important;
+    }
+}
+
+

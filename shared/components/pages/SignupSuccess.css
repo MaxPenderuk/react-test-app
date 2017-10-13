@@ -1,0 +1,22 @@
+.SignupSuccess {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    height: 570px;
+
+    & .Button {
+        width: 88%;
+        margin-top: 40px;
+    }
+    & .SignupSuccess__icon {
+        width: 32px;
+        height: 32px;
+        background: url(../../assets/images/success.svg);
+    }
+    & .SignupSuccess__text {
+        & h4 {
+            text-align: center;
+        }
+    }
+}

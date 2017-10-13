@@ -1,0 +1,16 @@
+.SignupForm {
+    width: 320px;
+    height: 570px;
+    position: absolute;
+
+    & .Button {
+        position: absolute;
+        bottom: 0;
+    }
+    & .SignupForm__fields {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

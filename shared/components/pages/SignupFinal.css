@@ -1,0 +1,8 @@
+.SignupFinal {
+    width: 320px;
+
+    & .SignupFinal__text {
+        text-align: center;
+        color: #8D8D8D;
+    }
+}

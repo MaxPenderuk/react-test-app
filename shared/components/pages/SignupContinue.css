@@ -1,0 +1,7 @@
+.SignupContinue {
+    width: 320px;
+
+    & .Button {
+        margin-top: 20px;
+    }
+}
