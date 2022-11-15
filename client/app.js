@@ -17,7 +17,7 @@ const store         = configureStore(initialState);
 (async () => {
     try {
         match({ history: browserHistory, routes }, (error, redirectLocation, renderProps) => {
-            ReactDOM.hydrate(
+            ReactDOM.render(
                 <Provider store={store}>
                     <i18n.Provider i18n={{}}>
                         <Router {...renderProps} />
